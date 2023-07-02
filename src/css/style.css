@@ -1,0 +1,29 @@
+body {
+    color: #999;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto; 
+    width: 1200px;
+}
+
+.container-item {
+    width: 20%;
+    height: 120px;
+
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-item.active {
+    background-image: url('https://raw.githubusercontent.com/netology-code/ahj-homeworks/AHJ-50/dom/pic/goblin.png');
+    box-shadow: 5px 5px 10px red;
+}
+
+.container-item.active:hover {
+    cursor: url('../assets/cursorGame.png'), auto;
+  }
+  
