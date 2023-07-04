@@ -1,1 +1,1 @@
-![CI](https://github.com/PavelBarashkov/ahj-homeworks_DOM/actions/workflows/web.yml/badge.svg)
+![CI](https://github.com/PavelBarashkov/ahj-homeworks-events/actions/workflows/web.yml/badge.svg)
