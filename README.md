@@ -1,1 +1,1 @@
-![CI](https://github.com/PavelBarashkov/ahj-homeworks-events/actions/workflows/web.yml/badge.svg)
+[![Build status](https://ci.appveyor.com/api/projects/status/ebviy490khv13sjo?svg=true)](https://ci.appveyor.com/project/PavelBarashkov/ahj-homeworks-events)
