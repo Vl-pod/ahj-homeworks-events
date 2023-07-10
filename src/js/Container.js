@@ -7,7 +7,7 @@ export default class ContainerGame {
     this._items = this.element.querySelectorAll('.container-item');
     this.countUser = document.querySelector('.count-user');
     this.countBot = document.querySelector('.count-bot');
-
+    this.clickedOnItem = false;
     this.onclickItem = this.onclickItem.bind(this);
 
     this._items.forEach((item) => {
@@ -27,8 +27,11 @@ export default class ContainerGame {
       }
     });
     containerItem[randomIndex].classList.add('active');
-    this.count(this.countBot);
-    this.finish('');
+    if (!this.clickedOnItem) {
+      this.count(this.countBot);
+    }
+    this.clickedOnItem = false;
+    this.finish('5');
   }
 
   random() {
@@ -56,6 +59,7 @@ export default class ContainerGame {
     e.preventDefault();
     if (e.target.classList.contains('active')) {
       this.count(this.countUser);
+      this.clickedOnItem = true;
       e.target.classList.remove('active');
     }
   }
